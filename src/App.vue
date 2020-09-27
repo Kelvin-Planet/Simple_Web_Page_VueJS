@@ -2,18 +2,19 @@
   <div id="app">
     <!-- <img alt="Vue logo" src="./assets/logo.png"> -->
     <!-- <HelloWorld msg="Welcome to Your Vue.js App"/> -->
-    <Page01 />
+    <Home />
   </div>
 </template>
 
 <script>
 // import HelloWorld from './components/HelloWorld.vue'
-import Page01 from './components/Page01.vue'
+// import Page01 from './components/Page01.vue'
+import Home from './components/Home.vue'
 
 export default {
   name: 'App',
   components: {
-    Page01
+    Home
   }
 }
 </script>
@@ -45,4 +46,12 @@ body > #app > div {
   height: 100%;
 }
 *{box-sizing: border-box;}
+img {
+  pointer-events: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -o-user-select: none;
+  user-select: none;
+}
 </style>

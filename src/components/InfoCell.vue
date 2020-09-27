@@ -6,13 +6,13 @@
       <h4>{{title}}</h4>
       <hr/>
       <h6>{{description}}</h6>
-      <h6><font color="#f68d28">了解更多</font></h6>
+      <h6><font color="#f68d28">{{ $t("message.more") }}</font></h6>
   </div>
 </template>
 
 <script>
 export default {
-  name: 'Cell',
+  name: 'InfoCell',
   props: ['title', 'description', 'image'],
 }
 </script>
