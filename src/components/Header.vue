@@ -5,33 +5,14 @@
     </div> 
     <div id="menu-button">
         <div id="menu-inner">
-            <!-- <ul>
-            <li>D-BIZ遙距營商計劃</li>
-            <li>首頁</li>
-            <li>關於我們</li>
-            <li>產品</li>
-            <li>服務</li>
-            <li>科技券</li>
-            <li>聯絡我們</li>
-            <li>簡 | EN</li>
-            </ul> -->
         </div>
-        <a href="#" v-on:click="onMenuClick">
-            <div class="hamburger"/>
-            <div class="hamburger"/>
-            <div class="hamburger"/>
-        </a>
+        <div id='container-img' v-on:click="onMenuClick">
+            <img src='https://www.nintendo.com.hk/switch/mario/assets/images/common/skin/default/header_menu_on.png' />
+            <img src='https://www.nintendo.com.hk/switch/mario/assets/images/common/skin/smb/header_menu_on.png' />
+        </div>
     </div>
     <!-- <div id='h-list'>
         <ul>
-            <li>簡 | EN</li>            
-            <li>聯絡我們</li>            
-            <li>科技券</li>            
-            <li>服務</li>
-            <li>產品</li>
-            <li>關於我們</li>
-            <li>首頁</li>
-            <li>D-BIZ遙距營商計劃</li>
         </ul>
     </div> -->
   </div>
@@ -137,13 +118,36 @@ export default {
     object-fit: cover;
 }
 #menu-button {
-    width: auto;
+    height: 60px;
+    width: 60px;
     float: right;
-    margin: 16px;
+    margin: 0px;
     margin-right: 0px;
     opacity: 0;
     display: none;
+    transition: 0.3s;
 }
+#container-img {
+    position: relative;
+    width: 60px;
+    height: 60px;
+}
+#menu-button img {
+    position: absolute;
+    width: 60px;
+    top: 0px;
+    left: 0px;
+}
+#menu-button img:last-of-type {
+  opacity: 1;
+  transition: opacity 0.5s ease-in-out;
+  -moz-transition: opacity 0.5s ease-in-out;
+  -webkit-transition: opacity 0.5s ease-in-out;
+}
+#menu-button:hover img:last-of-type {
+  opacity: 0;
+}
+
 #menu-inner {
     z-index: -1;
     position: fixed;

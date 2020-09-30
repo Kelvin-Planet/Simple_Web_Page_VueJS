@@ -9,7 +9,6 @@
     </slider>
     <Header />
     <section id='page-body'>
-        <div id='spacing'/>
         <div class='clearfix'>
         <div class='left-column'>
             <InfoCell 
@@ -39,12 +38,9 @@
         </div>
         </div>
     </section>
+    <div id='spacing' />
     <div id='footer'>
-        <div class='clearfix'>
-        <div class='left-column'>
-            <div id='footer-message'>This is HTML,CSS layout demo test.</div>
-        </div>
-        </div>
+        <div id='footer-message'>This is HTML,CSS layout demo test.</div>
     </div>
   </div>
 </template>
@@ -86,7 +82,7 @@ export default {
     height: 100%;
 }
 #spacing {
-    height: 100px;
+    height: 10px;
 }
 #page-body {
     max-width: calc(100% - 80px);
@@ -140,7 +136,7 @@ a {
     color: #c9c9c9;
 }
 #footer-message {
-    margin: 24px;
+    padding: 24px;
     color: white;
     text-align: left;
 }
