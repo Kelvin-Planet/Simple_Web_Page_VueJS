@@ -1,11 +1,11 @@
 <template>
   <div id='header'>
     <div id="logo">
-        <img id="light-logo" src="http://www.bex.hk/images/Logo.png">
+        <img id="light-logo" src="https://cdn.mos.cms.futurecdn.net/AfGovVvoB7pdbJcxGwnAPY-1200-80.jpg">
     </div> 
     <div id="menu-button">
         <div id="menu-inner">
-            <ul>
+            <!-- <ul>
             <li>D-BIZ遙距營商計劃</li>
             <li>首頁</li>
             <li>關於我們</li>
@@ -14,7 +14,7 @@
             <li>科技券</li>
             <li>聯絡我們</li>
             <li>簡 | EN</li>
-        </ul>
+            </ul> -->
         </div>
         <a href="#" v-on:click="onMenuClick">
             <div class="hamburger"/>
@@ -22,18 +22,18 @@
             <div class="hamburger"/>
         </a>
     </div>
-    <div id='h-list'>
+    <!-- <div id='h-list'>
         <ul>
-            <li>D-BIZ遙距營商計劃</li>
-            <li>首頁</li>
-            <li>關於我們</li>
-            <li>產品</li>
+            <li>簡 | EN</li>            
+            <li>聯絡我們</li>            
+            <li>科技券</li>            
             <li>服務</li>
-            <li>科技券</li>
-            <li>聯絡我們</li>
-            <li>簡 | EN</li>
+            <li>產品</li>
+            <li>關於我們</li>
+            <li>首頁</li>
+            <li>D-BIZ遙距營商計劃</li>
         </ul>
-    </div>
+    </div> -->
   </div>
 </template>
 
@@ -133,7 +133,7 @@ export default {
     float: left;
 }
 #light-logo {
-    max-width: null;
+    max-width: 130px;
     object-fit: cover;
 }
 #menu-button {
@@ -152,7 +152,7 @@ export default {
     right: -330px;
     width: 330px;
     transition: right 0.5s ease;
-    background: rgba(82, 82, 82, 0.9);
+    background-color: #e60012;
     opacity: 1;
 }
 .menu-inner-open {
@@ -169,7 +169,7 @@ export default {
 
 @media only screen and (max-width: 1024px) {
     #light-logo {
-        max-width: 60px;
+        max-width: 100px;
         object-fit: cover;
     }
     #menu-button {
@@ -189,7 +189,7 @@ export default {
         bottom: 0px;
         right: -100%;
         width: 100%;
-        background: rgba(82, 82, 82, 0.9);
+        background-color: #e60012cc;
         opacity: 1;
     }
     .menu-inner-open {

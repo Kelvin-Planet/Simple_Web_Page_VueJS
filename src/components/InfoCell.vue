@@ -1,12 +1,12 @@
 <template>
   <div class='cell'>
-      <div>
+      <div id='container'>
         <img v-bind:src="`${image}`" />
       </div>
       <h4>{{title}}</h4>
-      <hr/>
-      <h6>{{description}}</h6>
-      <h6><font color="#f68d28">{{ $t("message.more") }}</font></h6>
+      <h4>{{description}}</h4>
+      <h4><font color="#f68d28">{{ $t("message.more") }}</font></h4>
+      <div id='bottom' />
   </div>
 </template>
 
@@ -18,6 +18,9 @@ export default {
 </script>
 
 <style>
+#bottom {
+  height: 10px;
+}
 hr {
     border: none;
     background: #f68e2a;
@@ -25,19 +28,16 @@ hr {
     width: 50px;
 }
 .cell > h4 {
-    margin-top: 10px;
+    margin-top: 0px;
     margin-bottom: 0px;
     font-size: 24px;
-    line-height: 34px;
     font-weight: 400;
     letter-spacing: 0.2em;
 }
-.cell > h6 {
-    margin-top: 10px;
-    margin-bottom: 0px;
-    font-weight: 300;
-    padding: 30px;
-    font-size: 18px;
-    min-height: 150px;
+#container {
+   padding: 16px;
+}
+#container img {
+   width: 100%;
 }
 </style>

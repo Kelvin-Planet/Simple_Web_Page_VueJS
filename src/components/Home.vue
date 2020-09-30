@@ -13,13 +13,27 @@
         <div class='clearfix'>
         <div class='left-column'>
             <InfoCell 
-            image="http://www.bex.hk/images/home1.png"
+            image="https://www.nintendo.com.hk/switch/mario/assets/images/common/products/products_img02.jpg"
             :title="$t('message.title1')"
             :description="$t('message.description1')"/>
         </div>
         <div class='right-column'>
             <InfoCell 
-            image="http://www.bex.hk/images/home2.png"
+            image="https://www.nintendo.com.hk/switch/mario/assets/images/common/products/products_img03.jpg"
+            :title="$t('message.title2')"
+            :description="$t('message.description2')"/>
+        </div>
+        </div>
+        <div class='clearfix'>
+        <div class='left-column'>
+            <InfoCell 
+            image="https://www.nintendo.com.hk/switch/mario/assets/images/common/products/products_img04.jpg"
+            :title="$t('message.title1')"
+            :description="$t('message.description1')"/>
+        </div>
+        <div class='right-column'>
+            <InfoCell 
+            image="https://www.nintendo.com.hk/switch/mario/assets/images/common/products/products_img05.jpg"
             :title="$t('message.title2')"
             :description="$t('message.description2')"/>
         </div>
@@ -28,24 +42,7 @@
     <div id='footer'>
         <div class='clearfix'>
         <div class='left-column'>
-                <p class='text-light'>
-                    <strong>{{ $t("message.company_name") }}</strong>
-                    <br>{{ $t("message.tel") }}
-                    <br>{{ $t("message.address") }}
-                </p>
-        </div>
-        <div class='right-column'>
-                <p class='text-light'>
-                    <br>
-                    <a href="index.html">{{ $t("message.home") }}</a>|	
-                    <a href="about.html">{{ $t("message.about") }}</a>| 	
-                    <a href="product.html">{{ $t("message.product") }}</a>|	
-                    <a href="service.html">{{ $t("message.service") }}</a>|	
-                    <a href="TVP.html">{{ $t("message.coupon") }}</a>|	
-                    <a href="contact.html">{{ $t("message.contact") }}
-                        <br><small>{{ $t("message.copyright") }}</small>
-                    </a>
-                </p>
+            <div id='footer-message'>This is HTML,CSS layout demo test.</div>
         </div>
         </div>
     </div>
@@ -71,8 +68,8 @@ export default {
     data() {
     return {
       image: [
-          'http://www.bex.hk/images/668523284.jpg',
-          'http://www.bex.hk/images/530198406.jpg'],
+          'https://www.nintendo.com.hk/top/img/switch_zeldamusou_200908_l.jpg',
+          'https://www.nintendo.com.hk/switch/avp3a/assets/images/img_hero01.jpg'],
       list: [
         { width: '100%', height: '100%' },
         { width: '100%', height: '100%' },
@@ -97,7 +94,7 @@ export default {
     margin: 0 auto;
 }
 #footer {
-    background-color: #525252;
+    background-color: #e60012;
     padding-left: 40px;
     padding-right: 40px;
 }
@@ -119,7 +116,7 @@ export default {
     font-size: 0;
     height: 0;
 }
-slider img {
+.slider img {
     object-fit: cover;
     width: 100%;
     height: 100%;
@@ -141,6 +138,11 @@ a {
     cursor: pointer;
     -webkit-tap-highlight-color: rgba(0,0,0,0.0);
     color: #c9c9c9;
+}
+#footer-message {
+    margin: 24px;
+    color: white;
+    text-align: left;
 }
 @media only screen and (max-width: 1024px) {
     .left-column {
