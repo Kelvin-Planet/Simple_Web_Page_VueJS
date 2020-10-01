@@ -5,23 +5,37 @@
     </div> 
     <div id="menu-button">
         <div id="menu-inner">
+            <ul>
+            <li><HeaderButton title="客戶服務 / Customer Support"/></li>
+            <li><HeaderButton title="Store"/></li>
+            <li><HeaderButton title="TOPICS"/></li>
+            <li><HeaderButton title="遊戲軟體 / Game Software"/></li>
+            <li><HeaderButton title="主機 / Console"/></li>
+        </ul>
         </div>
         <div id='container-img' v-on:click="onMenuClick">
             <img src='https://www.nintendo.com.hk/switch/mario/assets/images/common/skin/default/header_menu_on.png' />
             <img src='https://www.nintendo.com.hk/switch/mario/assets/images/common/skin/smb/header_menu_on.png' />
         </div>
     </div>
-    <!-- <div id='h-list'>
+    <div id='h-list'>
         <ul>
+            <li><HeaderButton title="客戶服務 / Customer Support"/></li>
+            <li><HeaderButton title="Store"/></li>
+            <li><HeaderButton title="TOPICS"/></li>
+            <li><HeaderButton title="遊戲軟體 / Game Software"/></li>
+            <li><HeaderButton title="主機 / Console"/></li>
         </ul>
-    </div> -->
+    </div>
   </div>
 </template>
 
 <script>
+import HeaderButton from './HeaderButton.vue'
 export default {
     name: 'Header',
     components: {
+        HeaderButton,
     },
     methods: {
         onMenuClick () {
@@ -87,7 +101,6 @@ export default {
 #h-list ul li {
     float: right;
     margin-left: 24px;
-    margin-top: 16px;
 }
 #h-list li:hover {
     color: #f68d28;   
@@ -116,6 +129,7 @@ export default {
 #light-logo {
     max-width: 130px;
     object-fit: cover;
+    vertical-align: middle;
 }
 #menu-button {
     height: 60px;
@@ -153,8 +167,8 @@ export default {
     position: fixed;
     top: 0px;
     bottom: 0px;
-    right: -330px;
-    width: 330px;
+    right: -360px;
+    width: 360px;
     transition: right 0.5s ease;
     background-color: #e60012;
     opacity: 1;
@@ -170,7 +184,15 @@ export default {
     height: 2px;
     background-color: #f68d28;
 }
-
+#logo {
+    border: red 3px solid;
+}
+/* #h-list li {
+    background-color: red;
+} */
+/* #header {
+    border: red 3px solid;
+} */
 @media only screen and (max-width: 1024px) {
     #light-logo {
         max-width: 100px;
